@@ -1,0 +1,21 @@
+name: Release action
+# Call the reusable workflow release-solution-with-inputs.yml
+# Release your solution to prod when you create a new release.
+
+on:
+  release:
+      types: [created]        
+
+jobs:
+  Release-solution-ALMLab:
+    uses: ./.github/workflows/release-solution-with-inputs.yml
+    with:
+      #You can specify the solution name here
+      solution_name: Komet_AnpassungenD365
+      #Update your values here
+      BUILD_ENVIRONMENT_URL: https://kopiekometdental.crm4.dynamics.com/
+      PRODUCTION_ENVIRONMENT_URL: https://kometdentallive.crm4.dynamics.com/
+      CLIENT_ID: 780b766d-c47b-4fc3-a2bb-78b9dee7046e
+      TENANT_ID: 588d2769-898f-487c-b56b-ea09ce634ea9      
+    secrets:
+      envSecret: ${{ secrets.PowerPlatformSPN }}
