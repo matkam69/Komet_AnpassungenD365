@@ -91,24 +91,26 @@ jobs:
         solution-output-file: ${{ inputs.solution_shipping_folder}}/${{ inputs.solution_name }}.zip
 
 
+
     - name: Delete Old Artifacts
       uses: actions/github-script@v6
       id: artifact
       with:
-        script: |
-          const res = await github.rest.actions.listArtifactsForRepo({
-          owner: context.repo.owner,
-          repo: context.repo.repo,
-          })
-
-          res.data.artifacts
-          .forEach(({ id }) => {
-            github.rest.actions.deleteArtifact({
+          script: |
+            const res = await github.rest.actions.listArtifactsForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              artifact_id: id,
             })
-          })
+
+            res.data.artifacts
+              .filter(({ name }) => name === 'managedSolutions')
+              .forEach(({ id }) => {
+                github.rest.actions.deleteArtifact({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  artifact_id: id,
+                })
+              })
 
 
     - name: Upload the ready to ship solution to GH artifact store
