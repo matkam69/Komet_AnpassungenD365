@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.23012.174" SolutionPackageVersion="9.2" languagecode="1031" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>Komet_AnpassungenD365</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Komet Anpassungen D365" languagecode="1031" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Anpassungen an Standard D365 Entitäten" languagecode="1031" />
+    </Descriptions>
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Komet</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Standardherausgeber für Gebrüder Brasseler" languagecode="1031" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>komet</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>63784</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="1" schemaName="territory" behavior="2" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="territory" displayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="1" schemaName="territory" displayName="Gebiet" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="description" displayName="Beschreibung" parentSchemaName="territory" parentDisplayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Gebiet" id="{2474525c-aaae-43ce-97e2-7adb3ed7efa5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="managerid" displayName="Manager" parentSchemaName="territory" parentDisplayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Gebiet" id="{2474525c-aaae-43ce-97e2-7adb3ed7efa5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Gebietsname" parentSchemaName="territory" parentDisplayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Alle Gebiete" displayName="Alle Gebiete" parentSchemaName="territory" parentDisplayName="Gebiet" id="{00000000-0000-0000-00aa-000010001050}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Gebietsname" parentSchemaName="territory" parentDisplayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Gebiet" id="{2474525c-aaae-43ce-97e2-7adb3ed7efa5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentterritoryid" displayName="Übergeordnetes Gebiet" parentSchemaName="territory" parentDisplayName="Gebiet" solution="msdynce_AppCommonPatch201904 (9.0.23012.10001)" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Gebiet" id="{2474525c-aaae-43ce-97e2-7adb3ed7efa5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="territoryid" displayName="Gebiet" parentSchemaName="territory" parentDisplayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Alle Gebiete" displayName="Alle Gebiete" parentSchemaName="territory" parentDisplayName="Gebiet" id="{00000000-0000-0000-00aa-000010001050}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Alle Gebiete" displayName="Alle Gebiete" parentSchemaName="territory" parentDisplayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001050}" />
+        <Dependent type="26" schemaName="Alle Gebiete" displayName="Alle Gebiete" parentSchemaName="territory" parentDisplayName="Gebiet" id="{00000000-0000-0000-00aa-000010001050}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Informationen" parentDisplayName="Gebiet" solution="msdynce_AppCommon (9.0.4.0066)" id="{2474525c-aaae-43ce-97e2-7adb3ed7efa5}" />
+        <Dependent type="60" displayName="Informationen" parentDisplayName="Gebiet" id="{2474525c-aaae-43ce-97e2-7adb3ed7efa5}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
