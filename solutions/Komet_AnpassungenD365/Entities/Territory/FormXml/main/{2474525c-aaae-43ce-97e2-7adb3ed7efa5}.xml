@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2474525c-aaae-43ce-97e2-7adb3ed7efa5}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls" solutionaction="Modified">
+      <tabs>
+        <tab name="general" verticallayout="true" id="{480c8ffd-7aca-42a0-acda-20cb36999b8c}" IsUserDefined="0" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="territory information" showlabel="false" showbar="false" id="{3b868bd2-5800-4d97-b6a7-d1765c80b68e}" IsUserDefined="0" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{baa52233-5f58-4d73-89bd-7bd572f8735d}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Gebietsname" languagecode="1031" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                      <cell id="{fb1cd164-6443-45c7-96df-a49b0e12e98d}" ordinalvalue="20001">
+                        <labels>
+                          <label description="Manager" languagecode="1031" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b8a5726-9a27-4c48-9964-cc79a1018b16}" ordinalvalue="20003" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{fb043491-874a-4726-ad6a-45b773564a9e}" locklevel="0" colspan="1" rowspan="1" ordinalvalue="10003" solutionaction="Added">
+                        <labels>
+                          <label description="Innendienstmitarbeiter" languagecode="1031" />
+                        </labels>
+                        <control id="komet_insideserviceemployee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="komet_insideserviceemployee" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{0817d85c-6bed-41eb-9950-33ec0b7b18ba}" ordinalvalue="20004" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1031" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="description" showlabel="true" showbar="true" id="{808CD9BD-B6B4-4fdd-A08A-FC70D749B722}" IsUserDefined="0" height="auto" ordinalvalue="1">
+                  <rows>
+                    <row>
+                      <cell colspan="2" showlabel="false" rowspan="5" auto="true" id="{a6184bda-e745-43e1-b2ea-da671f7924be}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Beschreibung" languagecode="1031" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d42def49-b99a-4964-9dd4-b6dd704794de}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left" solutionaction="Added">
+        <rows>
+          <row>
+            <cell id="{fc1331b8-499c-431e-907b-850e97b31613}" showlabel="false" ordinalvalue="10000">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{ba2636b9-a6f0-48cb-b3be-d98dc80e9f04}" showlabel="false" ordinalvalue="20001">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{32ee576f-74f9-4a0f-8ddc-25483f3f0b50}" showlabel="false" ordinalvalue="30002">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{3b4ffa59-f2e7-469f-ab3b-b418db3b4427}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left" solutionaction="Added">
+        <rows>
+          <row>
+            <cell id="{5839f3e7-2f5b-4a25-a757-f56339cb20bb}" showlabel="false" ordinalvalue="10000">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{d0f73873-02e3-4635-95c5-8ba151fe4680}" showlabel="false" ordinalvalue="20001">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+            <cell id="{8933ef39-3bd9-4aad-b939-d473881c346c}" showlabel="false" ordinalvalue="30002">
+              <labels>
+                <label description="" languagecode="1031" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true" solutionaction="Added">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Informationen" languagecode="1031" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Ein Formular für diese Entität" languagecode="1031" />
+    </Descriptions>
+  </systemform>
+</forms>
